@@ -1,7 +1,7 @@
-package Flight;
+package com.MegabyteSized.FlightDetailsAPI.Flight;
 
 import Exceptions.IncorrectSourceAndDestinationException;
-import Repository.FlightRepository;
+import com.MegabyteSized.FlightDetailsAPI.Repository.FlightRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.*;
@@ -13,7 +13,9 @@ public class FlightService {
     @Autowired
     FlightRepository flightRepository;
     public List<Flight> retrieveAllFlights(){
-        return flightRepository.findAll();
+        List<Flight> allFlights = flightRepository.findAll();
+        return allFlights;
+
     }
 
     public List<Flight> retrieveFlightsSourceAndDestination(String source, String destination){

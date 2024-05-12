@@ -1,4 +1,4 @@
-package Flight;
+package com.MegabyteSized.FlightDetailsAPI.Flight;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
